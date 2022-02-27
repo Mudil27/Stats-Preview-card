@@ -1,5 +1,5 @@
 # Frontend Mentor - Stats preview card component
-
+Deployed site -> mudil-stats-preview-card.netlify.app
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
