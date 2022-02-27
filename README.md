@@ -1,4 +1,4 @@
 
 
-Deployed site -> mudil-stats-preview-card.netlify.app
+Deployed site -> <a href='https://mudil-stats-preview-card.netlify.app/'>mudil-stats-preview-card.netlify.app</a>
 
