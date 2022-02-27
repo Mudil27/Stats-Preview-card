@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+
+.container{
+    width: 70%;
+    height: 55%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.left {
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* justify-content: space-between; */
+    padding: 40px 40px;
+    /* padding: top-bottom left-right */
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.right {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+    height: 100%;
+}
+
+.left h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.left .text {
+    margin-bottom: 50px;
+    font-size: 1.1em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.statistics {
+    width: 95%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one, .two, .three {
+    height: 100%;
+    width: 33%;
+}
+
+.one, .two, .three h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.7;
+}
+
+/* ___________________________________________________________________________________________________________ */
+
+@media (max-width: 375px) {
+    .parent {
+        height: fit-content;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .right {
+        width: 100%;
+        height: calc(50% - 4px);
+        border-radius: 10px 10px 0 0;
+        display: flex;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 10px 10px;
+        padding: 0;
+    }
+
+    .left h1 {
+        margin-bottom: 25px;
+        margin-top: 10px;
+        font-size: 1.5em;
+        color: hsl(0, 0%, 100%);
+        padding: 5px 10px;
+    }
+    
+    .left .text {
+        margin-bottom: 35px;
+        font-size: 1em;
+        color: hsla(0, 0%, 100%, 0.75);
+        padding: 5px 10px;
+    }
+
+    img {
+        width: 100%;
+        height: calc(100% + 8px);
+        border-radius: 10px 10px 0 0;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: small;
+    }
+
+    .one, .two, .three {
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+    }   
+
+    .one, .two, .three p {
+        margin-bottom: 25px;
+    }   
+}
